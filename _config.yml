@@ -1,11 +1,11 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
+title: Supuloo Blog
+SEOTitle: 苏噗噜的博客 | Supuloo Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: "https://huangxuan.me"              # your host, for absolute URL
+email: zhaosukii@outlook.com
+description: ""
+keyword: ""
+url: "//supuloozhao.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -13,11 +13,12 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-twitter_username:   huxpro
+weibo_username:     supuloo
+zhihu_username:     zhao-aoui
+github_username:    SupulooZhao
+#twitter_username:  huxpro
 #facebook_username:  huxpro
+ins_username:       supuloo.z
 #linkedin_username:  firstname-lastname-idxxxx
 
 
@@ -78,8 +79,8 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "For the next quantum leap<br>离开世界之前，一切都是过程"
-sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "人大多数时间与自己相处，<br>让自己有趣一点。"
+sidebar-avatar: /img/my-supuloo.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -103,37 +104,16 @@ page-mathjax: false
 # Friends
 friends: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
-        title: "乱序",
-        href: "http://mida.re/"
+        title: "苏噗噜",
+        href: "//space.bilibili.com/7998925"
     },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
+        title: "AOUI",
+        href: "//mp.weixin.qq.com/mp/homepage?__biz=MzIwMjgwODY2Mg==&hid=2&sn=5c25184cd74d2804762a17580a9e9fbf&scene=18#wechat_redirect"
     },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
+        title: "小铭同学",
+        href: "//drymx.com/"
     },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "David's Game",
-        href: "https://www.ruoyaowu.com/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
+        title: "Hux",
+        href: "//huangxuan.me"
     }
 ]
