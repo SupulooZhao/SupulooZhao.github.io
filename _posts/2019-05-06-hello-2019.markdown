@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "诞生！少年苏噗噜的个人网站！"
+title:      "诞生！少年的个人网站！"
 subtitle:   " \"Hello World, Hello Blog!\""
 date:       2019-05-06 12:00:00
 author:     "Supuloo"
