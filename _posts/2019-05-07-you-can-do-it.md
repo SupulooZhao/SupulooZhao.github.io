@@ -340,17 +340,19 @@ header-img: "img/tag-bg.jpg"
 layout:     post
 title:      "你文章的标题"
 subtitle:   "你文章的副标题"
-date:       2015-01-29					#你文章的落款时间，格式要和这里一样
+date:       2015-01-29
 author:     "你的名字/笔名"
-header-img: "img/post-bg-2015.jpg"		#你的背景图路径，参考之前设置头像的步骤
+header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - 标签1					#即你这篇文章的关键词，在Archive页面可以进行tag检索
-    - 标签2					#高频出现的tag会被推荐上你首页的Featured Tags
+    - 标签1
+    - 标签2
 ---
 ```
 
-在这之后就是正文的部分，可以先按最原始的记事本编辑一些文字，或者提前学习一下[Markdown的基本语法](https://www.jianshu.com/p/191d1e21f7ed)，我之后会专门写篇文章介绍。最重要的是要记得保存为`.md`或`.markdown`格式，然后命名为`year-month-day-your-title`的形式，比如你是2019年5月4日写的文章，名字取为first，就要命名为`2019-05-04-first`。
+其中`date`是你文章的更新时间，格式要和这里一样为年月日，位数也是。`header-img`是你这篇文章的背景图，参考之前设置头像的步骤在这之后就是正文的部分。`tags`即你这篇文章的关键词，在Archive页面可以进行tag检索，高频出现的tag会被推荐上你首页的Featured Tags。
+
+现在你可以先按最原始的记事本方式编辑一些文字，或者提前学习一下[Markdown的基本语法](https://www.jianshu.com/p/191d1e21f7ed)，我之后会专门写篇文章介绍。最重要的是要记得保存为`.md`或`.markdown`格式，然后命名为`year-month-day-your-title`的形式，比如你是2019年5月4日写的文章，名字取为first，就要命名为`2019-05-04-first`。
 
 ### 更新博客
 
