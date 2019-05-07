@@ -55,11 +55,11 @@ tags:
 ## 目录
 
 - 域名获取
-  - [Github账号注册](#Github账号注册)
+  - [Github账号注册](# Github账号注册)
   - [域名设置](#域名设置)
 - 网页编辑前的工作
-  - [Github Desktop安装](#Github Desktop安装)
-  - [Jekyll安装](#Jekyll安装)
+  - [Github Desktop安装](# Github Desktop安装)
+  - [Jekyll安装](# Jekyll安装)
 - 网页编辑
   
   - [克隆模板](#克隆模板)
