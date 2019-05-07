@@ -55,11 +55,11 @@ tags:
 ## 目录
 
 - 域名获取
-  - [Github账号注册](# Github账号注册)
+  - [Github账号注册](#Github账号注册)
   - [域名设置](#域名设置)
 - 网页编辑前的工作
-  - [Github Desktop安装](# Github Desktop安装)
-  - [Jekyll安装](# Jekyll安装)
+  - [Github Desktop安装](#Github Desktop安装)
+  - [Jekyll安装](#Jekyll安装)
 - 网页编辑
   
   - [克隆模板](#克隆模板)
@@ -100,7 +100,7 @@ Github实质上应该是一个开源代码社区，每个用户能够在这里�
 
 安装好后你的桌面会多一个紫色圆包围的小猫图标（其实是个章鱼猫来的，叫Octocat）。
 
-![Octocat](/img/in-post/post-you-can.jpg)
+![Octocat](D:\Theme\Personal\MyPage\SupulooZhao.github.io\img\in-post\post-you-can\mypage-gd.jpg)
 
 ### Jekyll安装
 
