@@ -234,8 +234,6 @@ ins_username:     你具体Ins的用户名
   {% endif %}
 ```
 
-
-
 复制好后，只需要将其中的`www.facebook.com`换成`www.instagram.com`，再将后面两个花括号中的`facebook_username`换成`ins_username`即可，这时我们完成了第一步，下面进行对应logo的新增。
 
 进入👉[Font Awesome](http://www.fontawesome.com.cn/faicons/)图标库网站，搜索Instagram，出现结果后点击进入会看到一串代码，将其中的`fa-instagram`替换掉上面复制代码块中最长的那串`fa-facebook`即可。大概是这么个原理，`fa`是Font Awesome的简称，这个模板应用了它们的图标，`circle`表示拿来它们图标库中的`圆`，`stack-2x`表示把它放大`两倍`，下面那行则是将一倍大小的logo图标反色`inverse`处理，放到圆上，就形成了咱们看到的社交网站链接logo，是不是好神奇！
@@ -298,7 +296,7 @@ About页面提供中英文两种版本的个人简介，由本文件下方的`Ch
 
 最后打开`archive.html`文件，进行Archive页面内容的修改。
 
-```
+```.html
 ---
 title: Archive
 layout: default
@@ -337,7 +335,7 @@ header-img: "img/tag-bg.jpg"
 
 打开第一篇文章（用编译器或者记事本都可以打开），开头的参数即为我们需要关注的部分。
 
-```
+```.markdown
 ---
 layout:     post
 title:      "你文章的标题"
