@@ -58,7 +58,7 @@ tags:
   - [Github账号注册](#Github账号注册)
   - [域名设置](#域名设置)
 - 网页编辑前的工作
-  - [Github Desktop安装](#Github Desktop安装)
+  - [Github客户端安装](#Github客户端安装)
   - [Jekyll安装](#Jekyll安装)
 - 网页编辑
   
@@ -94,7 +94,7 @@ Github实质上应该是一个开源代码社区，每个用户能够在这里�
 
 ## 网页编辑前的工作
 
-### Github Desktop安装
+### Github客户端安装
 
 就像百度网盘有自己的客户端，Github也有。它叫👉[Github Desktop](https://desktop.github.com/)，就像安装任何你电脑上的软件一样下载安装它吧（不得不说我很喜欢这个软件的UI）。
 
