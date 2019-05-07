@@ -224,7 +224,8 @@ ins_username:     你具体Ins的用户名
 ```.yml
 {% if site.facebook_username %}
 <li>
-  <a target="_blank" href="https: //www. facebook.com/{{ site.facebook_username }}">
+  <a target="_blank" href="https://www.facebook.com/
+  {{ site.facebook_username }}">
     <span class="fa-stack fa-lg">
       <i class="fa fa-circle fa-stack-2x"></i>
       <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
