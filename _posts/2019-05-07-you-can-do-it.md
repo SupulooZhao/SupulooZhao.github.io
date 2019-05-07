@@ -100,7 +100,7 @@ Github实质上应该是一个开源代码社区，每个用户能够在这里�
 
 安装好后你的桌面会多一个紫色圆包围的小猫图标（其实是个章鱼猫来的，叫Octocat）。
 
-![](D:\Theme\Personal\MyPage\SupulooZhao.github.io\img\mypage-gd.jpg)
+![Octocat](/img/in-post/post-you-can.jpg)
 
 ### Jekyll安装
 
