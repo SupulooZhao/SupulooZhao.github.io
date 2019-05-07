@@ -172,7 +172,7 @@ Github也有类似的功能，你能够一键将你喜欢的开源项目克隆�
 
 打开仓库文件夹中的`_config.yml`文件，把下面这段复制进去，替换掉第一部分（原作者用 **#** 标志区分了各个部分），并将其中**中文**部分替换成对应的英文内容，注意替换时只改文字内容，两边如果有引号请**不要动**，下同。
 
-```.yml
+```yml
 # Site settings
 title: 你博客的名字
 SEOTitle: 你希望它在浏览器网页条等地方显示的名字
@@ -196,7 +196,7 @@ baseurl: ""
 
 于是乎，理论上只要我们能够知道自己其它社交网站的主页域名，就能直接把它链到我们的个人博客，原作者这里给出了微博、知乎、Github等网站链接，我们可以直接更改（不需要的那个就直接在前面加 **#** 注释掉）。
 
-```.yml
+```yml
 # SNS settings
 RSS: false
 weibo_username:     huxpro
@@ -215,23 +215,23 @@ twitter_username:   huxpro
 
 首先你进入自己的Ins主页，观察到自己的域名形式是`www.instagram.com/ins_username`在这个`# SNS settings`模块中新增一行Instagram的用户名代码：
 
-```.yml
+```yml
 ins_username:     你具体Ins的用户名
 ```
 
 然后进入仓库文件夹中的`_includes`文件夹，打开里面的`sns-links.html`文件，将下面这块代码复制一份，粘贴到它下面，关键词是facebook（找不到的话可以按下`Ctrl+F`输入关键词帮你迅速定位）。
 
-```.html
-{% if site.facebook_username %}
-<li>
-  <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li>
-{% endif %}
+```html
+  { if site.facebook_username }
+  <li>
+    <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  { endif }
 ```
 
 复制好后，只需要将其中的`www.facebook.com`换成`www.instagram.com`，再将后面两个花括号中的`facebook_username`换成`ins_username`即可，这时我们完成了第一步，下面进行对应logo的新增。
@@ -248,7 +248,7 @@ ins_username:     你具体Ins的用户名
 
 首先继续打开`_config.yml`文件，翻到下面的Sidebar settings，进行侧边栏的内容修改。
 
-```.yml
+```yml
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "你想在侧边栏头像下展示的签名<br>大小于号之间加br用来换行"
@@ -259,7 +259,7 @@ sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used
 
 接着打开`index.html`文件，进行Home首页内容的修改。
 
-```.yml
+```html
 ---
 layout: page
 description: "你想在本页面标题下展示的一句简单文字，中英文都可以"
@@ -268,7 +268,7 @@ description: "你想在本页面标题下展示的一句简单文字，中英文
 
 再打开`about.html`文件，进行About页面内容的修改。
 
-```.yml
+```html
 ---
 layout: page
 title: "About"
@@ -280,7 +280,7 @@ multilingual: true
 
 About页面提供中英文两种版本的个人简介，由本文件下方的`Chinese Version`和`English Version`的代码块控制。
 
-```.html
+```html
 <!-- Chinese Version -->
 <div class="zh post-container">
     这里直接输入你的中文个人简介，<br>大小于号之间加br用来换行。
@@ -296,7 +296,7 @@ About页面提供中英文两种版本的个人简介，由本文件下方的`Ch
 
 最后打开`archive.html`文件，进行Archive页面内容的修改。
 
-```.html
+```html
 ---
 title: Archive
 layout: default
@@ -335,7 +335,7 @@ header-img: "img/tag-bg.jpg"
 
 打开第一篇文章（用编译器或者记事本都可以打开），开头的参数即为我们需要关注的部分。
 
-```.markdown
+```markdown
 ---
 layout:     post
 title:      "你文章的标题"
