@@ -221,7 +221,8 @@ ins_username:     你具体Ins的用户名
 
 然后进入仓库文件夹中的`_includes`文件夹，打开里面的`sns-links.html`文件，将下面这块代码复制一份，粘贴到它下面，关键词是facebook（找不到的话可以按下`Ctrl+F`输入关键词帮你迅速定位）。
 
-```.yml
+```
+.yml
   {% if site.facebook_username %}
   <li>
     <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}">
