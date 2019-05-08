@@ -192,7 +192,7 @@ baseurl: ""
 
 还是这个文件，看向它的第三部分，这里涉及你的社交网站链接，它就是网页右侧和下方那些社交网站logo链接的去向。我们以**微博**为例，原理大概是这样的：
 
-登录网页版微博后由右上角进入`账号设置`，点击`个性域名`，在这里设置你自己的英文域名后缀`weibo_username`，保存后就能直接通过`weibo.com/weibo_username`链接进入你的微博主页，如果你设置的是`boy`，那么你在浏览器输入`weibo.com/boy`就能进入你的微博主页，和上面差不多的替换道理嘛。
+登录[网页版微博](https://weibo.com/)后由右上角进入`账号设置`，点击`个性域名`，在这里设置你自己的英文域名后缀`weibo_username`，保存后就能直接通过`weibo.com/weibo_username`链接进入你的微博主页，如果你设置的是`boy`，那么你在浏览器输入`weibo.com/boy`就能进入你的微博主页，和上面差不多的替换道理嘛。
 
 于是乎，理论上只要我们能够知道自己其它社交网站的主页域名，就能直接把它链到我们的个人博客，原作者这里给出了微博、知乎、Github等网站链接，我们可以直接更改（不需要的那个就直接在前面加 **#** 注释掉）。
 
@@ -213,7 +213,7 @@ twitter_username:   huxpro
 
 以**Instagram**为例，我如果想在主页新增自己Ins主页的链接，我需要走两步：一是新增链接地址，二是在主页新增对应的logo。
 
-首先你进入自己的Ins主页，观察到自己的域名形式是`www.instagram.com/ins_username`在这个`# SNS settings`模块中新增一行Instagram的用户名代码：
+首先你进入自己的[Ins主页](https://www.instagram.com/)，观察到自己的域名形式是`www.instagram.com/ins_username`在这个`# SNS settings`模块中新增一行Instagram的用户名代码：
 
 ```yml
 ins_username:     你具体Ins的用户名
