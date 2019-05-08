@@ -1,0 +1,292 @@
+---
+layout:     post
+title:      "接招吧！来自我的Markdown安利！"
+subtitle:   "Markdown简明教程和Typora软件分享"
+date:       2019-05-08 12:00:00
+author:     "Supuloo"
+header-img: "img/post-bg-20190508.jpg"
+catalog: true
+tags:
+    - 教程
+    - 分享
+    - Markdown
+    - Typora
+---
+
+> 学会了Markdown，你就能优雅地撰写文章啦。
+
+
+
+## 前言
+
+上一篇文章中我们学习了如何搭建这个博客，这里则将讲述如何更好地编辑你博客中的图文。
+
+在接触Markdown之前，我有学过$LaTeX$的文本编辑语言，两者有异曲同工之妙（下文会提到），如果你听说过后者，那么理解前者将非常轻松。而如果这两者都没听说过也无妨，只需要你会开机和打字就行。
+
+本文将先分别介绍Markdown（一种文本编辑语言）和Typora（一种类似你手机备忘录的工具），然后由浅至深介绍具体语法内容，最后还整理了一些针对本类型博客的小技巧，我也才刚学会的那种。
+
+如果你想学习更多新东西，可以顺着目录往下看；如果想效率更高一点，想更快进入创作阶段，点击这里👉[直接跳转](#简易操作)查看更简单的操作方式。
+
+
+
+## 目录
+
+- 什么是Markdown？
+  - [它和Word的区别](#它和Word的区别)
+  - [它适用于什么场景](#它适用于什么场景)
+- 什么是Typora？
+  - [Typora简介](#typora简介)
+  - [Typora安装](#Typora安装)
+- Markdown语法简明教程
+  - [常用语法](#常用语法)
+  - [简易操作](#简易操作)
+- 技巧分享
+  - [文内跳转](#文内跳转)
+  - [插入图片](#插入图片)
+
+- 拓展阅读
+
+
+
+## 什么是Markdown？
+
+### 它和Word的区别
+
+自古以来，在文本编辑界存在着两大阵营。
+
+首先是**所见即所得**阵营，即你眼前看到的效果就是你文本的最终效果，每次输入或操作都能看到相应的具体变化，放入一张图片，插入一个表格，加粗、居中、分列、标序，都有相应的按钮**直接**对应这些功能。
+
+与之相对应的是**所见非所得**阵营，即展示在你眼前的是最简单的字符串，没有字体、大小、颜色等区别，没有任何格式的区别。它们也许不具备排版上的美观性，但它们**包含**着你所需要的效果信息，经过特定的编译环节之后，它们能转化出你想要的效果。
+
+为了方便理解，我举个不太恰当的例子——就像吃饭点餐时会遇到两种情况：一种是看着菜品的实物照片进行点餐，另一种则是通过菜名和服务员口头介绍来了解它们，两者都能让你吃到满意的美食。前者能**直接**从照片看到实物，但需要先做好菜，拍好照片，印刷到菜单上；后者则将菜品信息**包含**在介绍里，原则上只需要说话就可以完成介绍，但需要炒制好后才能看到最终模样。前者直观，后者简约。
+
+Word属于所见即所得阵营。
+
+Markdown属于所见非所得阵营，同属于该阵营的还有$LaTeX$和HTML语言。
+
+「举一个需要实现加粗的**例子**。」同样需要加粗「例子」二字，它们是如何实现的呢？
+
+- Word：鼠标光标选中「例子」二字，点击加粗对应的**B**按钮
+- Markdown：在编写文本时，「例子」二字前后加上两个星号，即`**例子**`
+- $LaTeX$：在编写文本时，将「例子」二字放到`\textbf{}`的花括号中，即`\textbf{例子}`
+- HTML：在编写文本时，将「例子」二字放到`<b> </b>`的两对大小于号之间，即`<b>例子</b>`
+
+（为什么大多和字母**B**有关系？粗体的英文单词是**bold**，不少快捷键和功能符号都取自它们对应单词的首字母）
+
+以上四者的特性各不相同，按我个人的理解，Word用于办公文档较多，Markdown常用于日常记录，$LaTeX$以强大的公式排版能力和众多论文模板著称，HTML则是网页开发中必不可少的存在，更多区别各位可以自行百度，或查看下文的[拓展阅读](#拓展阅读)。
+
+
+
+### 它适用于什么场景
+
+说回我们的主角，从结果来看，Markdown能干的事情，Word都能干，在功能上几乎是被包含状，但两者在适用场景上还是不太一样。由于功能简单，Markdown在编辑过程中会更让人专注于文字内容本身（Word中大多数功能我们平时都用不到吧），这应该是它最受人喜爱的一点。
+
+在Github、知乎、简书等内容分享平台上，Markdown也是比较热门的编辑方式。而在咱们这个博客的[搭建过程](<https://supuloozhao.github.io/2019/05/07/you-can-do-it/>)中我们也知道了，原作者的个人简介和博客日志都是用这种格式写的。
+
+因此，一些对格式排版要求不高，更注重内容本身的创作情境，Markdown会是你的好选择。
+
+原则上来说你只需要掌握语法，使用电脑自带的记事本按格式写下你的文本，保存后再将后缀改为Markdown的`.md`或`.markdown`就可以了，但这里也有更方便的专门编辑Markdown的软件，能够让你的创作过程更加优雅专注👇
+
+
+
+## 什么是Typora
+
+### Typora简介
+
+Typora是一款轻便简洁的Markdown编辑器，支持**实时渲染**，即隐藏提供排版信息的部分，直接展示文本转化之后的效果（这也是与其他Markdown编辑器最显著的区别），能让你的Markdown文档写得像Word文档一样流畅。你可以👉[看看它们的官网](<https://www.typora.io/>)，就知道它有多简约大方。
+
+### Typora安装
+
+点击下载[Windows版本](https://www.typora.io/#windows)，IOS版本也能在官网找到，安装好后桌面会出现T字形的图标，双击打开即可开始编辑你的文档。
+
+
+
+## Markdown语法简明教程
+
+### 常用语法
+
+下面将介绍一些常用的语法，你可以打开Typora，一个一个对照着输入看看效果以便理解。
+
+
+
+#### 1.分级标题
+
+分级标题用来区分文本章节，在标题内容前加 **#** 号与空格实现。
+
+```html
+# 一级标题
+## 二级标题
+### 三级标题
+```
+
+效果如下，一共有六级标题，通过 **#** 号的数量来区分。
+
+![](data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wgARCAD6A/MDASIAAhEBAxEB/8QAGwABAQADAQEBAAAAAAAAAAAAAAEEBQYCAwf/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHvwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADhjuWh50/QH5/0Jv2JzR2Dk9WfoD8/wCoNw4Qd25LVH6E4jrzIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAODO8fn4/QH5+Os4zpeNN3gdd+cnT7fD542mj6vQHVedbpzqthym9OT+vr5G21GZ5L+g/n36AUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAzxr2wGvbAafie444zZpeiNLvOX6E8Y/acqYuT6wz10vnAPjzt+p0PL5u3MPv/AM27wzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeL6Gtxt2PGt2o+Oq3YxNB1Q8eqNb62A57z0Y5zffUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEURRFEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOb6T4HIOsHPbfM5c96u/A+vZ8Z0Rz+65fenz2Glzz44OywzNxPGAfo2R8PuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgTvn58P0HldRtzF1X2+5jbvnO0OJ33j7GFstL0RqNHtMY2Gv8AhmnffXXbEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEKgqDz5+gvj0Mb6/QY+TB5tHw85IWCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgqCoKgoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpjcufHQMbWm7cvTp2PrjcuW+p0jSfE6Fy2cbsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADU7bSHlgDZ8f3XInvHDaa3Y4RkXH2RhY+x1Z8t9znRnUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAnGdoOKdqOXw+0HCeO+Go03YD8+6XeDjcPvh+f5naAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/8QAKBAAAgIDAAIDAAEEAwEAAAAAAwQAAgEFERQVEhNgJTEzNoAiI5Ak/9oACAEBAAEFAv8AYR1019i+2ZJf3jM94zNa6RzDWc1U0pSEu/szKte8ZnvGZrmrtgu+9ZwrW0BTLD5Ey7DYht9+3zAZvlf9a+14quuMuCyB2WS6i1cP7o2Pnq/oCts12vvWAwbOXNfPM1U8zVRVlUuc1zfZuBJQPklV09xOuZu/sA3/AFN90zUnvGZ7xme8ZnvGYH+V15wD8uoKpa0drDufX+wtr692W7Y+Itc7hMl9aAln0sJZBqqFVVRrr4TOtITmsjdw21Td81120/v4/p+o8JXOfBVngqzwVZ4KsbDkaAUnukqdXWpJ+RqxPEAnpFo4tYuw1Soms7G3lbHdVxSMh7qdYXDKA/GK8sQIjWAJ3XMF+czmm0N+u2DJFV87V0uTMGYxbYURW+k566/a/CreMeJpPlF1rIs7VsTV1hffptYudOD+8p0TBAw8QJSpF1ylXKo2sp8cq/rb0qSuK4riyQrOH1gDs1rWla69ejRh/aFDX+FllfDQMaMPaUqOmcdwskNW5kVmM50ymZ6VWelVg6YEP/zjd2mVGPfWnvrRbcWYZ2DHjKJfMCFWtnc529mtnB/pTG0Gu5atsLl/mon7LyHjF9ncxRmcGyOLVaYCCtqA/W2CK+fGBPGBMADXO3AwQylCbNv7/o3L/wB3sFi42aS1Fy7AhtiEns9h9omdnkzizGdjdVopSBofblCDKIf7H7Hc3P8AHX3bDF1suCLscl11hEV0gUvm6QpKP5/yFBs2XjJK5fVGreNUsm0L4nRHj4i/W2V2vz8XbTxdtPF20ZO+GMF2NBYZvrVPDbGNFrLwBf5DgXrTgL5O7Mhe2yLU7O0WINPIyL5YcZSZwjn5JfsrVrfFh0vaVrWmMLhwYg6FqNcIcz4V+ecYtMrhzPGBMYxXH63s7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv+wJtmsAvuVJ7lSAPRgQHsnczvA4zXdhtY98iAu7m+v8AeAg9yEhGthldimztli+3uOLvFMb9gZRK5PC108LXRnHi64BS/DJPo3jLNfb7GmGk0sZVW91jExuZssfyAMd2f/NkSJD42H7BzW1cJ6Ic9EOE+SySXmDPkGXmDuWeBsxX+pGnjJtkMXT1cKFtumfOQJkpTf8AziR/7dh+vz/T+an81P5qD9p45AbTFKYbSV9e2ngmb31iinmal1i58HQ8kDSp2dnQbKglLXViVc52P/nV/8QAFBEBAAAAAAAAAAAAAAAAAAAAoP/aAAgBAwEBPwEAH//EABQRAQAAAAAAAAAAAAAAAAAAAKD/2gAIAQIBAT8BAB//xAA/EAABAwICBgYHBQcFAAAAAAABAAIDERIEIRMiMTJBURQzQmBhkSM0cYGS0eFScpOhohBDYoKQscEVU3OA8P/aAAgBAQAGPwL/ALCCPDPIt1cuJUZFrnHI1C3IvI/NbkXkfmpNIGi37KlINDaVNpJHOoBvGqMTGxkU4hbkXkfmtyLyPzRfIGgh1NVPhhdXWNBQK6XVHsCgkg1nOrdqq2Q2nxaFuH4QmGXfprd7i4bxyanzzP8ASDdbRTFzqxUJNeHsQDu0KJsDRszKa3TR6V+ZFyllAOh+8ndHBy20NFSUsLxkax1X7v8AC+i/d/hfRFmGI5kBtFIGy6I3HWrRVdjRMK7t9Vh3RGhJpsQnMbn1GRomslNtf4R3qcLIsjyPzW5F5H5rci8j81uReR+a3IvI/NHTUbrdlaHDXP4VPEp7RtDSSfFNkb2SulNmDWubyUQbnRybANrsynXNq13LgtIcXbpdZoIomUkvu8E2d2IsB8E+bSl4t5Jzy7E1ca8FvYn8lEIb7GyU1lg7XEZHYsP/AMY71V0EfkvV4/Jerx+S9Xj8l6vH5KRuGFh5NCujikaee6pukE3yEAVdVTfaLtX3KTDc9nhzTsQ72NWIc6trGXfkpRKK0pRCFmxuoFhmDYGkLDSjs5FBr87dUp+H6IzKutVEzRaRvJB0NuHYHVNVHGNZsQoDzUeu2J7RS13HvfpIw050zVGOp4NamRSXFwPHmm4aEXSt2ngCnz2lw7Tk2CVuWxpaFOaZlixFu9QUqnYjGbo2OGdSVHojUNG2ibH9pikkmAbHTYSpJoK3DWyRdiGXNpTZVN0E3oz2aEBq62952mwq/DTW822lR2vLxTePHvda9ocORCo0ADwQxNNYLTOr4tHFBrQA0cAukNbQ8uCfHWlwpVPOlvu/hojE40rxWcryEGNFGjYqHYpHR9v8lWSIV5jJdse9bZPNbZPNNY3Y0U/pyaIRB2Va1XUD4l1A+JMi0IFx21Tndo5NWtLSWUeia4owNf6QcKNQEslpP3UyXEOpkLjROnL/AEZ40Qdg+pLQRs/yuP6UOk9X/KjH0l0LKba7FGGY50oJzoVLKMdQDOwOWk6fZ4FyY1773Ab3PvdV0bHHxC6mP4V1MfwqrYmA+DU17RdG1tfAIPm6uP8A9ROk7N9CnTGJzmMOVW5J/SGgNrwVr8oSTTNOjhiOibk3U4LRWi/7NmaYHxENrnqLTMw4lbTtbFGehsiDT2FiGyVoAXZITxNe0320c6qj+6O+TIY2ktftomsMGjhGbnFqxUlNYZtTcPnpNh9itbvne96OGc6hptUGDw8hAYACv5v8KXD4h1XcE6Eul0jtbhRETyPaeFoU07qUe0tZnmm4VhAlvu1sqpoO0DvcaGWlf936rbL+L9Vtl/F+q2y/i/VRRxMJ1BU21zR6RdY8W8E2FsZ0r9a4oYuzjXxRL4qU48CpPf8A2T8XiDpLjQWpsrQaF3+E3Exua0cVMYKtez3J7MVhiSdhpmEZMSZpBXIc/bmqtjkZJzoFGRectr9vfOjgCPFNc5oJbsPL9lGgAeC0wYNJ9pWyNDhyKrHExp8B+wvprHKqzFVnEz4V1MfwqgFB/RqdG8uuHgtrvhW13woSR7pUsTWejZ26qmikQbo5M0942tFUcTI3ZXJq6qRNYI31caJsLYDI4iuRTYX4V7HO5lC/ByNrzQY7CSRg9o98S6Vrbzzct2P41ux/GnjCt9lE3BwsdHI51XOrmhca7Gkn2IvmaSyM0ACZi7yxobu02rpvWA6mjXqf6vovU/1fRRvIlttzMe1QuYMRaOMq00+KIax9oyqpYJZjIGt74h7pC2gpkuud5LrneSOjFzmNyRf0Ylzzm94WMkbtbuqDDtHpCdZQ4dnVtaSfcn43SHYRb4qKSY1cX8lh4n00L2CisGLnaXi4BuwfmmaTGS33ZMzNV0Z9LtJebTwU2JZQxuFNuffHj+lcf0rj+lS39ZlZuoyumrTsgpjIotebO7km4lhukG8AnvlYGvMZyTI7y3WJQwjMORo3UyzqoAXWOj4ogEstZqu5p8LsG59e2zaET/p8r3na41+SEgwckII5mn9v6df/xAArEAACAQQCAQMEAgIDAAAAAAABEQAhUXGRMUFhgdHxEGCh8ICxweEgcJD/2gAIAQEAAT8h/kIaLEgKnY4x/m0jTx9Xjw+UYkI/sw44BgQaik48MNTmDxkCzP8Av6vHnH8AECA2EAdUJ36UzzwYhAaAvSBTeGogECEmQpEY8FX7u961Rj4BrCSbuUIAYsEeBZAKAtF3/RF/DrjvqLkpEBJdpxGQqi4s4DCSlL/lBSBjrxMeVP2lH7Siho1H/jA1TV9DnuAVGiF6uYQPmSYGlYr2CQAUbwogeKDgfdIwoIB/xDx48eERHDyHhZlQ6tYDgXU9RwkkAkaJB8xCEIouqQ5AjH4EAUVfREPx1QSVUg6I4sYuvZgzIknolFuiyxQ9XL1jAWnN4FsIJCfi5auqgh8E9ZgdInmKdnmPB90kwRieTPwmfCZ8JnwmUj4+1eB55m/KgdOq2V3OMco/IRMizRSIANz/ALjDsFW/wG5zBWQPFTC8uAi/f74g3go/EM7UIyZVaUZ7HxDERhdTqUVyQPOCsJerSkqTRYLqmHoCnOdGCg+7hM0UlMRQR6Z94aAqpyJRHKIwXYzAGxxaIysiqk9RAgagz6Sx4Q6w5Ssh2I6sw2DmBK9gGeoOPNzUU7gDh4n3AJ/MeQCRUODKSHMZDdKFrVo/BYUi0iJqoyKQ+i+e9vu7JBUJ4sUChZUXHRN4F9LqA4NuiAKTCQ+152QNBqdHECwvWGuAlHUGE2gABEGiggDABKhBjtETVlo4TnPxOE9Kfj/tPj/tOGqB/wB0POo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86jzqPOo86/kArAViz9d7T9d7QwgUcq/ECKP98Y+eQ6GydIeiXO088RB4sBF/UAwuYHwImY5OtbmGCJKH7H6Ht1JfwgQJkORUQe1VQFWGXCIGMeIHMYkNuc8AG+7nmfAyZ8Pnw+DYs4IARKrtAK8jiLCAMAIeIA8IB4OIAjrCRKR5igYpBkcVh4oQdcVhy8raqOKzyBXsIdPRB0oQ7CIUQlSc34FAde6zt4wo0AnAEEOmBP0FvvIhiIpJJXUBVdlIJp24FLG9ZkkRF6j7hxDsaGPKqsKtPgHBTiLXHV9l+kt8rPKpuKSlRTHGSVE2ALHCYKhyMANQu2IiUdGH4MQdfdxxawVMfEY+Ix8RgUXSqaOzPENlwKNCDQhuGgdrwknhTIYdsi0rRsA9jx9IM4rkagnlgwIDNI8gQHyUX5J+Iv4KPoKfmc84gfRcHNXABIeUL/fAqOawZIDhyPvPtNSCctXofR4T0CEKgRc9p28lDhgQuxg/QAAEABdiIOQgsQ4TZeQnw+DIwOAAgPu5LiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRLiJcRi4/kB2lCvrc4jRqJhQeU9CCTgY94CziA694E8EkAYF4Kx8GZ+wPeDewAJXvENJObS8QGBCRiPjxLI0HT/EYtjlQ/H3jyl6SQP8z557z557yiiAKCaZqRCeNlIvYQVG/USOA4oo/wDcFGkBdnrLrjo75fpaHkCMwASF64GKyj0XPBgjUY6pFDCDqpLzcxxCQJpb3+8SfKgCfHp8eh8V2F1FnX7wh2uIx01U7IPsIQbQU8nge8Dppawh0EFOpZDMqIzBoojELeBdkXzDSIb00PZaBIHkCDMuOcpFzRJ/cEHoKFCGnI56+8GZcw1FUfWSJtLueVZR7L5p9AFCFjXBU+C6pCF+oCZHvG4iA6pGIKKQN1gqigxoUtGXjBgGeOJ+uhUsx3YsFPoEAwejS/ohBaRGwD+uv/Ov/9oADAMBAAIAAwAAABDzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzTzTzzjjDzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzyyiwgRwwiTzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzyRgzTySjijzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzwzzxwxywxzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzywxizQSBjxzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzTzjDzgBQDzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzxxxzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzTjDjTzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzDDSRSwjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzyyyyzyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz/xAAUEQEAAAAAAAAAAAAAAAAAAACg/9oACAEDAQE/EAAf/8QAFBEBAAAAAAAAAAAAAAAAAAAAoP/aAAgBAgEBPxAAH//EACsQAQACAQQCAgEDBAMBAAAAAAEAESExUZHxQWFxgWAQofAggLHBcNHhkP/aAAgBAQABPxD+4QpSLkh0NEHGTwwxh76wsoIrJ+siQ7vZzS7u7NolC5wgsiaQdHScobVa1AIF1bJnQn7frIkKp4SgUPlc5gknbdY+U2IeIclrLxi9olTlqYpglGL0ht6DcJvp6jVAWOucRtCoIRXODBn8uokq6GBjl+AWISMWZFtBQumXywE51vg2H/DFGkPsU1ZoT/KUAYHAtXT6LfualivVpUbsPG9yhKUSVKD5NfUBCqwwbq7F6MGAZAmBMt0j5nojeiNZFmoG15Ayg6W0Z+BKvSM8htkadCv4x4J7Y2fk3CLSAJgLVB7uZCKDFtW0as6p+UovvTdQpn6f0yJEiQdlZEGQRLOcpEDHo3AYChv6WU/NE9ZW/Hg9Q4hqHFMhfumEG0mYMrbPctKdSVYOZifwh0bHL/iBo/WgOQdddLILYNMCwAF1IO4vk6T23rLoUnrFNQ2h9xJAwajK9IagKrCttXP4t/qMmiIjbmyEs1NtizaJXS5d63bP2B+UsCJUNq+f6ZppptBuNZKlAPKbZggWEMKPtKbkC2w5W+BlXrnT4HKp9ypchLSXAr3+ysqwhbzUv/QH0zMMaODQX0X6Y/kGkFZD4apmbkH0CcvpagUKEPRWL0hL2KSmvnH3KAjO2GL+UH0x4vgEXPNf+y6DXSqsU8DLps/vApXiYZ28AyNLkHHEE++sRicWHXRz8wUmxX5cPLgsARzhPITxyIofixQJd6rcVVeKoK+ZawF8nbqyrXGnuI5ubUram/utIebkWHgB1+TPpgVAOilBVfLCkMomkGjdeLhMm665eBe+oakrclYKowCD4hj+QeLKuamTDtJcihYYvVGMLqq8wx8tMxlN2MxMvwOmYcvleXKBSn0LGfTc3cGg/wAwGQdVNurorWuNo5DqhFDS1lV6evy5YtIoGTTDiHSjQIPomhfaT0X7CzjaUNhGgDRXXTDWuMymiBAD4hKnimhfieHX1mcjcgVdWXNnEvIPtesSS6otQjjiHjzm4fdMJQGXwGkCqqBYj4SUMBh6F4O1qxCt6or8qL+7jmH8fyP6xIh7oQutBWf+Z9CV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25JXbklduSV25IFdOT+4B7koBZvFU7TssdliwPKGsF0+EEqBR5q1+i36l1R00KGg6Ko53IrlRUV5ZH+UdsoN6XV4NfcbAVwlCDR3fBLr6ze7IaPL1D8oANratbFfpfvvfKsb9Y2aFFlnoPlhq9q1iKbc3bxGTAkCXAL9x4lE0w1eswNsvNt7fy7CEaxVtaT+V/6n8r/1GMPasekMRhbSAUVVk1K4jZi2LTQDdy+j4hBcT9LtuNfqXdIWZCWMVfuYBAmaAG7vWB0ED4ZrlduPMzk8TfB7MeYhd9klXXlpmP5PLspbfjEL/SXDg2KaStsbUxRvyVUtEVwUXVaP+IxSWgayvEP5rZ+ZCNizmjQeMj7gqh1h6bS1sDBHlAbi/sBj7jkSmn4HJwPx7jPEADCgB7pCLzZWwCaJ5LajUbFU80NjQ+rhVirAdmkfECMITbAPCN/UIDJwrsa3r+0uaVSF9bw1mpQZcSpYPAKbfiHlboQlAeR0w07XA2AWG8gH8tdGpZJUqBVtY/ofPnxFHCum6jwlV5WAC6W9FoTO7KkD1V4FPIAM1TvG1XZBkaL5dE1wRCzZsOSkMZ+ZbE03RfhFKpMnFUgDSil1lX33OCltfEw/l1QYQDehlJZyJvUgUz7NXhGPX4U9Vl0/dj4jQILeMLP2HPiNiRRSnQJn86nvSNbNUDS1eFo2L0r8zzBEpEsbGvkigzUNU6ptpEsp0hMrVCArbg9y0zdF2sp/aZBOUQs0agwgpYDawuv0HvUzAtBfVs9JvQ/eWA+lr/1P5X/qBL+hgbAafluhbO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp207adtO2nbTtp20HaOb+4AA1wLJkHX4Z2L/udi/7jZLBXMNOPkl3v8g0xSVm26yYIlkUjW2DQhq4itRpnB5UFzUZPZGyKsW1+/wBJsHLKIrWYAh8aVrgsvyhTwHKgmDVeEFVsy92xecEiSTwi82ddNfzFDulU4UNU2/WjRQCyNVbwVzcDUC/8ksoQM6v7xvqA4CoWVjVGUaIsZdN2hulxNd4tlClD95qIhPHY3Ppu1hVnbiS5iWlDT7kHRoGt8Qcn1C6IT2vGmA0+4pjIuxgEp/lQJbQaK3uvGKfmJUJkKJa3n5/VZYPYxxmoLo13rzKJC5i28iPf0Qg2r06AB8pX1K6yp4OT41W0w/mxrVrzyyqYnbMkua1eSEIqkG1CwxmrjeBTKtAFTqCsVhl9xwqExdEu+nlHo8gla1gF5Mw1g3hWADWmpr/uMDKcAMbaatcY/MPg5r5nuhj1/W2wk11K/DjGm/1Akt2+is4yrWr8RlNoy6sYsjK3d2jQiahXW/cu6+r1izOmrlas5NCzMLDOyFVhP/Zb6Msi5oBW/meGgMaljJmwz6gJo17qmNdFqHbaXGetgoLpml017gNbvBnU0I+cr7lJnGw1rSLvTKuP/nX/AP/Z)
+
+
+
+#### 2.文本格式
+
+一般常用的有加粗、斜体、引用、删除。
+
+```html
+**这里是加粗，文字两端加双星号**
+*这里是斜体，文字两端加单星号*
+>这里是引用，文字前面加一个大于号
+~~这里是删除，文字两端加双波浪号~~
+```
+
+其中波浪号在键盘`Tab`键上方，同时按下`Shift`键和该键即可打出。效果分别如下。
+
+
+
+**这里是加粗，文字两端加双星号**
+*这里是斜体，文字两端加单星号*
+>这里是引用，文字前面加一个大于号
+
+~~这里是删除，文字两端加双波浪号~~
+
+
+
+#### 3.分列标号
+
+一般分为无序标号、有序标号、任务标号三种。
+
+**无序标号**在文字前加 **-** 短杠和一个空格实现。
+
+```html
+- 无序a
+- 无序b
+   - 无序b1
+   - 无序b2
+- 无序c
+```
+
+多级无序标号可在当前文字最前端加三个空格实现，效果如下。
+
+- 无序a
+- 无序b
+   - 无序b1
+   - 无序b2
+- 无序c
+
+
+
+**有序标号**在文字前加数字1.2.3.和一个空格实现。
+
+```html
+1. 有序1
+2. 有序2
+3. 有序3
+```
+
+效果如下。
+
+1. 有序1
+2. 有序2
+3. 有序3
+
+
+
+**任务标号**具有交互功能，你可以用来写自己的代办事项，通过在文字前加 **-** 短杠和内含一个空格的 **[ ]** 中括号实现。
+
+```
+- [ ] 任务一
+- [ ] 任务二
+- [ ] 已完成把空格换成x或者单击按钮
+```
+
+效果如下。
+
+- [ ] 任务一
+- [ ] 任务二
+- [x] 已完成把空格换成x或者单击按钮
+
+
+
+#### 4.添加链接
+
+有时候写文章会提到某些网页的内容，我们会想添加超链接让大家更方便的访问。通过中括号将需要产生链接效果的文字框住，再在后面小括号中添加网址即可。
+
+```html
+[百度一下](www.baidu.com)
+```
+
+效果是这样的👉[百度一下](www.baidu.com)
+
+以上即是常用的语法，能满足文本创作的基本需求，更多的内容可以查看[拓展阅读](#拓展阅读)里更全面的教程。
+
+
+
+### 简易操作
+
+上文提到的语法，可以直接在记事本中输入，保存后将后缀改为`.md`或`.markdown`格式即可。
+
+而当我们[安装好Typora](#typora安装)之后，你可以解锁更简便的操作方式！
+
+双击打开Typora会直接新建一个文档，你会发现在上方菜单栏中有`段落`和`格式`两个选项，以此点击查看，你会发现我们刚刚上面讲的所有代码实现的排版方式，全都可以**一键完成**！就像Word那样简单，选中字段，然后按下想要的效果就可以了（我可没耍你，是你想学新东西来着）！
+
+而在界面的左下角，你会看到两个按钮。第一个能让你随时查看由分级标题生成的文本大纲，第二个能让你在**实时预览**和**源代码模式**下切换，实时预览有时会过于智能，这时候源代码模式就能帮助你解决问题。
+
+如果觉得鼠标操作太麻烦不够优雅，也可以记下这些选项后对应的快捷键。习惯之后，你会发现，Typora的简单会让你沉浸下来，潜到文字的世界里去（也没那么神奇啦）。
+
+
+
+## 技巧分享
+
+### 文内跳转
+
+当文章篇幅较长时，我们一般会在本文正文内部开头放上一个简要目录，Markdown官方提供的自动生成目录的方式是输入`[toc]`后回车，即可按照分级标题生成一个完整的具有文内跳转功能的目录。它虽然方便，但不可微调（比如修改样式或精简条目），因此我更推荐手动添加的方式。
+
+原理和生成超链接一样，只是要将小括号内替换成文内的分级标题。
+
+```
+[跳到哪里](#跳到哪里)
+[Jump here](#jump-here)
+
+##### 跳到哪里
+##### Jump here
+```
+
+[跳到哪里](#跳到哪里)
+[Jump here](#jump-here)
+
+##### 跳到哪里
+
+##### Jump here
+
+需要注意的是，小括号中英文分级标题需要**全小写**，且用 **-** 短杠代替空格（这个bug我前几天找了好久才知道）。
+
+
+
+### 插入图片
+
+插入图片使用代码的格式如下，我一般直接点击菜单栏中的`格式`-`图像`。
+
+```html
+![图片标题，非必填](图片路径)
+```
+
+这里的图片路径可以是本地图片路径，也可以是网上的一张图，还可以是图片转码的文本。
+
+- 本地图片路径直接将图片所在文件夹的位置输入进来就可以，记得得是绝对路径（单击一下文件夹的路径栏，直接复制下来就行），这种方式仅适用于本地导出PDF分享或打印。
+- 添加网络图片可以在浏览器中右键点击图片，再点击`复制图片地址`即可，当你有专门的图床或云库时，它会提供给你图片地址，这时会比较方便。
+- 将图片编码成BASE64格式，直接用文本形式存储一张图。通过[在线转码工具](https://tool.css-js.com/base64.html)将需要添加的图片进行转码，再复制编码放到上述的图片路径中即可。
+
+其中第三种方式是我目前用在本博客的方式，因为它不需要访问外网，也比较方便，唯一的缺点在于放进Typora后会有很长一段代码，这时只需要在别处随意单击一下即可将它隐藏。
+
+
+
+### 导出PDF
+
+我们的博客和Github、知乎、简书等内容分享平台是能够自动解读这个格式的，博客的更新方式见[上一篇文章](https://supuloozhao.github.io/2019/05/07/you-can-do-it/#%E6%96%87%E7%AB%A0%E6%92%B0%E5%86%99)，其它网页发送它们只需要将源代码复制过去就可以了，当然，你也可以在Typora的菜单栏`文件`点击`导出`-`PDF`即可生成对应的PDF文件用以共享或打印。
+
+
+
+## 拓展阅读
+
+- [测评：对于写作的人来说，Markdown是你最好的朋友](https://baijiahao.baidu.com/s?id=1611928732267286939&wfr=spider&for=pc)
+- [LaTeX和Word相比有什么异同？](https://www.zhihu.com/question/20542113)
+- [HTML是什么？](https://baike.baidu.com/item/HTML)
+- [更全面的Markdown教程](https://www.jianshu.com/p/4272ed81cb4b)
+
